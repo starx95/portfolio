@@ -1,0 +1,16 @@
+#experienceCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+    border-radius: 10px;
+    flex: 1;
+    height: 100px;
+}
+
+@media (max-width: 1024px) {
+    #experienceCard {
+        justify-content: center;
+    }
+}
