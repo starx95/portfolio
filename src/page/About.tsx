@@ -32,7 +32,7 @@ export function About() {
             </div>
             </div>
         </div>
-        <div className="about-column">
+        <div className="text-column">
             <Chip label="ABOUT ME" className="chip" />
             <h2>I AM AVAILABLE FOR FULLTIME POSITIONS IN BOTH<span className="highlight"> WEB OR MOBILE DEVELOPMENT</span> </h2>
             <p>I possess extensive hands on experience in multiple web and mobile frameworks with robust data fetching and state management capabilities. In addition, I have strong proficiency in working with Prisma ORM, SQL and MongoDB databases, enabling the design and implementation of reliable, efficient, and high-quality data solutions.
@@ -87,7 +87,7 @@ export function About() {
             </div>
         </div>
       </Box>
-    <TechStackFooter />
+      <TechStackFooter />
     </Box>
     <Dialog open={openAward} onClose={() => setOpenAward(false)} maxWidth="sm" fullWidth>
         <DialogTitle>🏆 Award-Winning Project</DialogTitle>

@@ -46,16 +46,25 @@
     min-height: 100vh;     
     display: flex;           
     flex-direction: column;
+    justify-content: space-between;
     flex: 1;
 }
 
-#about .home-intro {
-    flex: 1;
-    padding: 10px 30px;
+#about .about-intro {
+    display: grid;
+    padding: 10px ;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
-#about .home-intro div {
+
+#about .about-intro .text-column {
+    flex: 1;
+}
+
+#about .about-intro div {
     line-height: 1.2;
 }
+
 
 #about .ctaDiv {
     display: flex;
@@ -74,8 +83,27 @@
   font-weight: 600;      
 }
 
+/* #about h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+} */
+/* #about p {
+  margin-top: 1rem;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  overflow-wrap: break-word; 
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  word-break: break-word;    
+  white-space: normal;       
+  max-width: 100%;      
+} */
+
 @media (max-width: 1024px) {
-#about .home-intro {
+#about .about-intro {
     display: grid;
     grid-template-columns: 1fr;
     flex: 1;
