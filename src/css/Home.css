@@ -2,8 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 2rem;
+  min-height: calc(100vh - var(--header-height));
 }
 
 .home-grid {
@@ -48,7 +47,7 @@
 }
 
 .content {
-  min-height: calc(100vh - 73px);
+  min-height: calc(100vh - var(--header-height));
 }
 
 .portrait-container {
@@ -87,11 +86,11 @@
 }
 
 .portrait {
-    transform: scaleX(1) scale(1.07);
+    transform: scaleX(1) scale(1);
     width: 32rem;
     border-radius: 12px;
     z-index: 2;
-    margin-top: calc(-10rem + 10rem * 12/100);
+    margin-top: calc(-10rem + 10rem * 18/100);
 }
 
 .arrowIcon {
@@ -105,13 +104,11 @@
   }
 }
 
-
-
 .overlay {
     position: absolute;
     margin-top: 6rem;
     width: 60%;
-    height: 89%;
+    height: 85%;
     z-index: 0;
     border-radius: 15px;
     box-shadow: -10px -10px 2px -30px rgba(255, 255, 255, 0.2),
@@ -373,7 +370,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   padding: 0;
 }
 }

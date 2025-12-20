@@ -5,11 +5,23 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { LinkedIn, YouTube } from "@mui/icons-material";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import { FancyTooltip } from "../components/FancyTooltip";
+import { useSelector } from 'react-redux'
+import type { RootState } from "../store/store";
+import { useEffect } from "react";
 
 export function Home() {
+  const headerHeight = useSelector((state: RootState) => state.header.headerHeight);
+
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      "--header-height",
+      `${headerHeight}px`
+    );
+  }, [headerHeight]);
+
   return (
     <Box className="content">
-      <Box className="home-grid-wrapper">
+      <Box className="home-grid-wrapper" sx={{marginTop: `${headerHeight}px`}}>
       <Box className="home-grid">
         <Box className="text-column">
           <Chip label="NIZAM YUSERI" className="chip" />
@@ -40,7 +52,7 @@ export function Home() {
               MORE ABOUT ME
             </Button>
 
-             <Box className="iconGroup">
+            <Box className="iconGroup">
             <FancyTooltip title="Download Resume" arrow>
               <Button
                 variant="outlined"
@@ -53,7 +65,7 @@ export function Home() {
                 }
                 className="iconBtn"
               >
-                <PictureAsPdfIcon sx={{ scale: 1.4 }} />
+                <PictureAsPdfIcon sx={{ scale: 1.4, color: '#fff' }} />
               </Button>
             </FancyTooltip>
 
@@ -68,7 +80,7 @@ export function Home() {
               }
               className="iconBtn"
             >
-              <LinkedIn sx={{ scale: 1.4 }} />
+              <LinkedIn sx={{ scale: 1.4, color: '#fff' }} />
             </Button>
 
             <Button
@@ -82,7 +94,7 @@ export function Home() {
               }
               className="iconBtn"
             >
-              <YouTube sx={{ scale: 1.4 }} />
+              <YouTube sx={{ scale: 1.4, color: '#fff' }} />
             </Button>
             </Box>
           </Box>

@@ -2,7 +2,6 @@ import { Box, Button, Chip, Dialog, DialogActions, DialogContent, DialogTitle } 
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import '../css/About.css';
 import { ExperienceCard } from "../components/ExperienceCard";
-import { TechStackFooter } from "../components/TechStackFooter";
 import { useState } from "react";
 import { LinkedIn, YouTube, GitHub, Facebook } from "@mui/icons-material";
 import { SiGmail } from "react-icons/si";
@@ -23,6 +22,7 @@ export function About() {
   return (
     <Box className="content">
     <Box className="page-wrapper">
+      <div>
       <Box className="about-intro">
          <div className="image-column">
           <div className="portrait-container">
@@ -51,28 +51,28 @@ export function About() {
                 variant="outlined"
                 onClick={() => window.open("https://www.facebook.com/Mohd.Nizam.Yuseri/", "_blank")}
               >
-                <Facebook sx={{scale: 1.4}} />
+                <Facebook sx={{scale: 1.4, color: '#fff'}} />
               </Button>
               <Button
                 size="small"
                 variant="outlined"
                 onClick={() => window.open("https://github.com/starx95", "_blank")}
               >
-                <GitHub sx={{scale: 1.4}} />
+                <GitHub sx={{scale: 1.4, color: '#fff'}} />
               </Button>
               <Button
                 size="small"
                 variant="outlined"
                 onClick={() => window.open("https://www.linkedin.com/in/mohamad-nizam-yuseri/", "_blank")}
               >
-                <LinkedIn sx={{scale: 1.4}} />
+                <LinkedIn sx={{scale: 1.4, color: '#fff'}} />
               </Button>
               <Button
                 size="small"
                 variant="outlined"
                 onClick={() => window.open("https://www.youtube.com/@mohamadnizam3867", "_blank")}
               >
-                <YouTube sx={{scale: 1.4}} />
+                <YouTube sx={{scale: 1.4, color: '#fff'}} />
               </Button>
               <Button
                 size="small"
@@ -81,13 +81,14 @@ export function About() {
                 onClick={handleEmailClick}
                 target="_blank"
               >
-                <SiGmail style={{scale: 1.4}} />
+                <SiGmail style={{scale: 1.4, color: '#fff'}} />
               </Button>
             </div>
             </div>
         </div>
       </Box>
-      <TechStackFooter />
+      </div>
+      {/* <TechStackFooter /> */}
     </Box>
     <Dialog open={openAward} onClose={() => setOpenAward(false)} maxWidth="sm" fullWidth>
         <DialogTitle>🏆 Award-Winning Project</DialogTitle>

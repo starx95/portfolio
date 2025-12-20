@@ -10,7 +10,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(to left, #000919, #0B0B45);
+    background: #4A5A70;
 }
 
 #home {
@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 10px 60px;
@@ -35,10 +35,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Hidden state */
-.header.hide {
-  transform: translateY(-100%);
-}
+
 
 .header div:nth-child(1) {
   display: flex;
@@ -93,7 +90,7 @@ body {
 
 .App section{
   max-width: 100vw;
-  scroll-snap-align: none;
+  scroll-snap-align: start;
 }
 
 .App.snap-ready {

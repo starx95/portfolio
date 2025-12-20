@@ -7,6 +7,7 @@
 #ido .page-wrapper {
     min-height: 100vh;     
     display: flex;   
+    padding-top: 65.78px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -25,7 +26,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-width: -webkit-fill-available;
 }
 
 #ido .chip.MuiChip-root {
@@ -83,7 +83,9 @@
 h5 {
     color: #fff;
     padding: 0 16px;
-    font-size: x-large;
+    font-size: medium;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
 }
 .ido-card-desc {
     color: #fff;

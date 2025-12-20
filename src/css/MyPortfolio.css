@@ -1,0 +1,77 @@
+#portfolio .page-wrapper {
+    flex: 1;
+    padding-top: 65.78px;
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 80%;
+}
+
+.portfolio-grid-wrapper {
+  margin-top: 2rem;
+}
+
+/* PORTFOLIO GRID */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  width: 80%;
+}
+
+/* PORTFOLIO CARD */
+.portfolio-item {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(20, 25, 35, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.portfolio-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Image */
+.portfolio-item img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.portfolio-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* Description */
+.portfolio-item p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #7a8ca3;
+  line-height: 1.5;
+}
+
+/* Tech Stack Chips */
+.portfolio-tags {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive tweaks */
+@media (max-width: 660px) {
+  .portfolio-grid {
+    gap: 1.5rem;
+  }
+}

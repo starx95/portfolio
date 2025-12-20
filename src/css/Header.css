@@ -1,0 +1,111 @@
+.header {
+  top: 0;
+  width: 100%;
+  padding: 0.4rem 0rem;
+  display: flex;
+  align-items: center;
+  background: rgba(10, 10, 10, 0);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+svg {
+    color: #ccc;
+}
+
+.drawer-list .MuiListItem-root {
+  color: #ccc;
+}
+
+.drawer-list .MuiListItem-root.active {
+  color: #fff;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  gap: 0.8rem;
+}
+
+.header-left img {
+  width: 38px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+/* DESKTOP NAV */
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ccc;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a.active,
+.nav a:hover {
+  color: #fff;
+}
+
+.nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+/* MOBILE */
+.mobile-menu-btn {
+  display: none !important;
+  margin-left: auto;
+}
+
+/* DRAWER */
+.drawer {
+  width: 260px;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.glass {
+  backdrop-filter: blur(15px);
+}
+
+.close-btn {
+  margin-left: auto;
+}
+
+.drawer-list .MuiListItem-root {
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.drawer-list .MuiListItem-root.active {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* RESPONSIVE */
+@media (max-width: 660px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block !important;
+  }
+}

@@ -7,7 +7,7 @@ interface CardProps {
   setOpenAward: Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const ExperienceCard = ({ exp = "4+", award = "3", setOpenAward }: CardProps) => {
+export const ExperienceCard = ({ exp = "4+", award = "3" }: CardProps) => {
   return (
     <div className="container" id="experienceCard">
     <div
@@ -16,7 +16,7 @@ export const ExperienceCard = ({ exp = "4+", award = "3", setOpenAward }: CardPr
       <div style={{ fontSize: "14px", opacity: 0.8 }}>Years Experience</div>
     </div>
     <div
-      onClick={() => setOpenAward(true)}
+      // onClick={() => setOpenAward(true)}
      
     >
       <div style={{ fontSize: "26px", fontWeight: "bold" }}>{award}</div>
