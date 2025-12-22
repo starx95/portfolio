@@ -28,12 +28,12 @@ export function Home() {
 
           <h2>
             HI! I'M NIZAM A
-            <span className="highlight"> FULL STACK DEVELOPER</span>
+            <span className="highlight"> FULL STACK ENGINEER</span>
           </h2>
 
           <p>
-            Full-Stack Software Engineer with 4+ years of experience 
-            building enterprise-grade React and Next.js applications 
+            Full Stack Software Engineer with 4+ years of experience 
+            building enterprise grade React and Next.js applications 
             using component-driven architecture. Strong expertise in 
             designing reusable, scalable UI component libraries with 
             Tailwind CSS, improving development speed, consistency, 

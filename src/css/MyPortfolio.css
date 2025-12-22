@@ -10,6 +10,7 @@
 
 .portfolio-grid-wrapper {
   margin-top: 2rem;
+  padding-inline: 2rem;
 }
 
 /* PORTFOLIO GRID */
@@ -17,7 +18,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
-  width: 80%;
+  width: 100%;
 }
 
 /* PORTFOLIO CARD */
@@ -68,10 +69,17 @@
   gap: 0.5rem;
   flex-wrap: wrap;
 }
+.portfolio-tags div {
+  display: flex;
+  padding: 4px 8px; 
+  /* gap: 0.5rem; */
+  color: #fff;
+}
 
 /* Responsive tweaks */
 @media (max-width: 660px) {
   .portfolio-grid {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 }
