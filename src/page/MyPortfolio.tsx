@@ -3,7 +3,7 @@ import '../css/MyPortfolio.css';
 import resumeThumb from '../assets/resume-analyze-dashboard.png';
 import { useState } from "react";
 
-const tags = ["ReactJS", "MUI", "Tailwind", "C#", "MSSQL", "Docker"];
+const tags = ["ReactJS", "MUI", "Tailwind", "C#", "MSSQL", "Docker", "JWT"];
 export function MyPortfolio() {
     const [showAll, setShowAll] = useState(false);
     const visibleTags = showAll ? tags : tags.slice(0, 3);
