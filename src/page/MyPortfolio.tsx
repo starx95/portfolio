@@ -17,8 +17,8 @@ export function MyPortfolio() {
                 <Box className="portfolio-grid">
                     <Box className="portfolio-item">
                       <img src={resumeThumb} alt="Project" />
-                      <h3>AI powered Resume Analyzer</h3>
-                      <p>A web application that automatically scans and analyzes candidate resumes against a job description (JD), helping hiring managers quickly shortlist suitable candidates and allowing job seekers to optimize their resumes for better matching. The system extracts key skills, experience, and qualifications from resumes and provides a match score and detailed insights, reducing manual screening time and improving hiring efficiency.</p>
+                      <h3>Resume Analyzer for hiring efficiency</h3>
+                      <p>A web application that automatically scans and analyzes candidate resumes against a job description (JD) using artificial intelligence, helping hiring managers quickly shortlist suitable candidates and allowing job seekers to optimize their resumes for better matching. The system extracts key skills, experience, and qualifications from resumes and provides a match score and detailed insights, reducing manual screening time and improving hiring efficiency.</p>
 
                           <Box className="portfolio-tags">
                           {visibleTags.map((tag) => (
